@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTA San Lite Baru</title>
+<style>
+:root{--bg:#080d12;--card:#111b22;--line:#263944;--green:#8cffb2;--text:#f2f7f4;--muted:#a9b9b2}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:radial-gradient(circle at 15% 0%,#17382c 0,transparent 35%),radial-gradient(circle at 100% 50%,#102c38 0,transparent 32%),var(--bg);min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(#ffffff06 1px,transparent 1px),linear-gradient(90deg,#ffffff06 1px,transparent 1px);background-size:32px 32px;mask-image:linear-gradient(to bottom,#000,transparent 85%)}
+header{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:15px 18px;background:#080d12dc;backdrop-filter:blur(14px);border-bottom:1px solid #263944}
+.brand{font-weight:900;letter-spacing:1px;font-size:17px}.brand span{color:var(--green)}
+
+
+main{width:min(760px,100%);margin:auto;padding:25px 16px 40px}.hero{text-align:center;padding:28px 8px 25px;animation:rise .7s ease both}.badge{display:inline-block;border:1px solid #38664e;color:var(--green);background:#10231a;padding:6px 11px;border-radius:99px;font-size:11px;letter-spacing:1.5px;font-weight:800}.hero h1{font-size:clamp(30px,8vw,48px);line-height:1.04;margin:17px 0 12px;letter-spacing:-1.5px}.hero h1 span{color:var(--green);text-shadow:0 0 25px #61ff9c55}.hero p{color:var(--muted);max-width:480px;margin:0 auto;line-height:1.6;font-size:14px}
+.hero-space{margin:28px 2px 34px;min-height:76px;display:flex;align-items:center;justify-content:center}.gpu-card{width:100%;padding:16px;border:1px solid #345047;border-radius:17px;background:linear-gradient(135deg,#14251e,#101a21);box-shadow:0 10px 35px #0003;text-align:center;animation:rise .7s ease both}.gpu-label{display:block;color:var(--muted);font-size:11px;letter-spacing:1.2px;font-weight:800;margin-bottom:6px}.gpu-name{display:block;color:var(--green);font-size:20px;font-weight:900;letter-spacing:1px}.gpu-detail{display:block;color:var(--muted);font-size:11px;margin-top:5px}
+.section-title{font-size:17px;margin:15px 2px 12px}.info{background:linear-gradient(135deg,#14251e,#101a21);border:1px solid #345047;border-radius:18px;padding:17px;margin-bottom:24px;box-shadow:0 10px 35px #0003;animation:rise .7s .1s both}.info-top{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-weight:800}.icon{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:#234735;color:var(--green);font-size:18px}.info p{color:#c2d0ca;font-size:13px;line-height:1.65;margin:0}.cards{display:grid;grid-template-columns:1fr;gap:12px}.link-card{position:relative;overflow:hidden;display:flex;align-items:center;gap:13px;padding:16px;background:linear-gradient(115deg,#142129,#10171d);border:1px solid var(--line);border-radius:17px;color:var(--text);text-decoration:none;transition:transform .2s,border-color .2s,background .2s;animation:rise .6s both}.link-card:nth-child(2){animation-delay:.08s}.link-card:nth-child(3){animation-delay:.16s}.link-card:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent,#8cffb20c,transparent);transform:translateX(-100%);transition:.5s}.link-card:hover{transform:translateY(-3px);border-color:#71d99a;background:#14251e}.link-card:hover:before{transform:translateX(100%)}.link-icon{width:45px;height:45px;flex-shrink:0;display:grid;place-items:center;border-radius:14px;background:#20372d;color:var(--green);font-size:21px}.link-copy{min-width:0;flex:1}.link-copy strong{display:block;font-size:15px;margin-bottom:4px}.link-copy small{display:block;color:var(--muted);font-size:12px;line-height:1.4}.arrow{font-size:22px;color:var(--green);transition:transform .2s}.link-card:hover .arrow{transform:translate(3px,-3px)}footer{text-align:center;padding:30px 8px 8px;color:#80958b;font-size:12px;letter-spacing:1px}footer b{color:var(--green)}
+@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}@media(min-width:560px){.cards{grid-template-columns:1fr 1fr}.link-card:last-child{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<header><div class="brand">Welcome <span>Sir</span></div></header>
+<main id="pageContent">
+<div class="hero-space"><div class="gpu-card"><span class="gpu-label">GPU PERANGKAT</span><strong class="gpu-name" id="gpuName">Mendeteksi GPU...</strong><small class="gpu-detail" id="gpuDetail">Deteksi otomatis saat web dibuka</small></div></div>
+<section id="info"><h2 class="section-title">Informasi</h2><div class="info"><div class="info-top"><span class="icon">ⓘ</span> Anti Fc - Oferclose</div><p>CLICK UNTUK UNDUH</p></div></section>
+<section id="tautan"><h2 class="section-title">Bahan Bahan Untuk Main</h2><div class="cards">
+<a class="link-card" href="https://drive.google.com/file/d/1JyjOnEKxLrWCUlMNTjmFYTUgzGw2IZeN/view" target="_blank" rel="noopener noreferrer"><span class="link-icon">⬇</span><span class="link-copy"><strong>APK 4–9</strong><small>INSTALL APK NEW</small></span><span class="arrow">↗</span></a>
+<a class="link-card" href="https://drive.google.com/file/d/17tsFQhdAkP4UKW9AcolTT1kXQxFoTvDa/view" target="_blank" rel="noopener noreferrer"><span class="link-icon">▶</span><span class="link-copy"><strong>APK 10–14</strong><small>INSTALL APK OLD</small></span><span class="arrow">↗</span></a>
+<a class="link-card" href="https://drive.usercontent.google.com/download?id=1ecIXfBIXQQa_2YxTIuGzpTmmyiQ8lCf5&export=download&authuser=0" target="_blank" rel="noopener noreferrer"><span class="link-icon">☷</span><span class="link-copy"><strong>MODPACK ORIGINAL</strong><small>INSTALL MODPACK</small></span><span class="arrow">↗</span></a>
+</div></section>
+<footer id="tentang"></footer>
+</main>
+<script>
+// Coba baca nama renderer GPU lewat WebGL; browser bisa menyembunyikan detail ini.
+function detectGPU() {
+  const name = document.getElementById('gpuName');
+  const detail = document.getElementById('gpuDetail');
+  try {
+    const canvas = document.createElement('canvas');
+    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    if (!gl) throw new Error('WebGL tidak tersedia');
+    const ext = gl.getExtension('WEBGL_debug_renderer_info');
+    const renderer = ext ? gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER);
+    const raw = String(renderer || 'GPU tidak diketahui');
+    const low = raw.toLowerCase();
+    let label = 'GPU TIDAK DIKETAHUI';
+    if (low.includes('mali')) label = 'MALI';
+    else if (low.includes('powervr') || low.includes('power vr')) label = 'PVR';
+    else if (low.includes('adreno')) label = 'DXT';
+    else if (low.includes('apple')) label = 'APPLE GPU';
+    else if (low.includes('intel')) label = 'INTEL GPU';
+    name.textContent = label;
+    detail.textContent = (ext && raw) ? raw : 'Nama GPU mungkin dibatasi oleh browser';
+    gl.getExtension('WEBGL_lose_context')?.loseContext();
+  } catch (e) {
+    name.textContent = 'GPU TIDAK TERDETEKSI';
+    detail.textContent = 'Browser tidak memberikan informasi GPU';
+  }
+}
+detectGPU();
+</script>
+</body>
+                                                                                                                                                                              </html>
+  
